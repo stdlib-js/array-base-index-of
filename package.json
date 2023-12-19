@@ -43,7 +43,7 @@
   },
   "devDependencies": {
     "@stdlib/array-base-accessor": "^0.1.0",
-    "@stdlib/array-base-ones": "^0.1.0",
+    "@stdlib/array-base-zero-to": "^0.1.0",
     "@stdlib/array-float64": "^0.1.1",
     "@stdlib/array-int32": "^0.1.1",
     "@stdlib/assert-is-integer": "^0.1.0",
