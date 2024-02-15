@@ -54,6 +54,11 @@ limitations under the License.
 To use in Observable,
 
 ```javascript
+indexOf = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-index-of@umd/browser.js' )
+```
+The previous example will load the latest bundled code from the umd branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/array-base-index-of/tags). For example,
+
+```javascript
 indexOf = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-index-of@v0.2.0-umd/browser.js' )
 ```
 
@@ -66,7 +71,7 @@ var indexOf = require( 'path/to/vendor/umd/array-base-index-of/index.js' )
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-base-index-of@v0.2.0-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-base-index-of@umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -163,7 +168,7 @@ idx = indexOf( x, NaN, 0, true );
 <!DOCTYPE html>
 <html lang="en">
 <body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-base-index-of@v0.2.0-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-base-index-of@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
