@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import indexOf from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-index-of@deno/mod.js';
+import indexOf from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-index-of@v0.2.0-deno/mod.js';
 ```
 
 #### indexOf( x, searchElement, fromIndex, equalNaNs )
@@ -136,7 +136,7 @@ idx = indexOf( x, NaN, 0, true );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import indexOf from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-index-of@deno/mod.js';
+import indexOf from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-index-of@v0.2.0-deno/mod.js';
 
 var x = [ 'foo', 'bar', 'beep', 'boop', 'foo', 'bar' ];
 
