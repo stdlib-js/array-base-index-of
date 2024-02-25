@@ -1,4 +1,0 @@
-// Copyright (c) 2024 The Stdlib Authors. License is Apache-2.0: http://www.apache.org/licenses/LICENSE-2.0
-/// <reference types="./index.d.ts" />
-import r from"https://cdn.jsdelivr.net/gh/stdlib-js/array-base-arraylike2object@v0.1.0-esm/index.mjs";import t from"https://cdn.jsdelivr.net/gh/stdlib-js/math-base-assert-is-nan@v0.2.0-esm/index.mjs";function e(e,n,i,s){var f;return function(r,t){return"function"==typeof r[t]}(e,"indexOf")&&!1===s?e.indexOf(n,i):(i<0&&(i+=e.length)<0&&(i=0),(f=r(e)).accessorProtocol?function(r,e,n,i){var s,f,o;if(s=r.data,f=r.accessors[0],i&&t(e)){for(o=n;o<s.length;o++)if(t(f(s,o)))return o;return-1}for(o=n;o<s.length;o++)if(e===f(s,o))return o;return-1}(f,n,i,s):function(r,e,n,i){var s;if(i&&t(e)){for(s=n;s<r.length;s++)if(t(r[s]))return s;return-1}for(s=n;s<r.length;s++)if(e===r[s])return s;return-1}(e,n,i,s))}export{e as default};
-//# sourceMappingURL=index.mjs.map
