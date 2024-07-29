@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import indexOf from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-index-of@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/array-base-index-of/tags). For example,
+
+```javascript
 import indexOf from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-index-of@v0.2.2-deno/mod.js';
 ```
 
@@ -136,7 +141,7 @@ idx = indexOf( x, NaN, 0, true );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import indexOf from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-index-of@v0.2.2-deno/mod.js';
+import indexOf from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-index-of@deno/mod.js';
 
 var x = [ 'foo', 'bar', 'beep', 'boop', 'foo', 'bar' ];
 
