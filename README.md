@@ -73,14 +73,14 @@ To view installation and usage instructions specific to each branch build, be su
 var indexOf = require( '@stdlib/array-base-index-of' );
 ```
 
-#### indexOf( x, searchElement, fromIndex, equalNaNs )
+#### indexOf( x, searchElement, fromIndex )
 
 Returns the index of the first element which equals a provided search element.
 
 ```javascript
 var x = [ 1, 2, 3, 4, 5, 6 ];
 
-var idx = indexOf( x, 3, 0, false );
+var idx = indexOf( x, 3, 0 );
 // returns 2
 ```
 
@@ -89,7 +89,7 @@ If the function is unable to find an element which equals a provided search elem
 ```javascript
 var x = [ 1, 2, 3, 4, 5, 6 ];
 
-var idx = indexOf( x, 7, 0, false );
+var idx = indexOf( x, 7, 0 );
 // returns -1
 ```
 
@@ -98,7 +98,7 @@ To begin searching from specific index, provide a non-zero `fromIndex` argument.
 ```javascript
 var x = [ 1, 1, 2, 1, 2, 3, 3 ];
 
-var idx = indexOf( x, 2, 3, false );
+var idx = indexOf( x, 2, 3 );
 // returns 4
 ```
 
@@ -107,20 +107,8 @@ If `fromIndex` is less than zero, the starting index is resolved relative to the
 ```javascript
 var x = [ 1, 1, 2, 1, 2, 3, 3 ];
 
-var idx = indexOf( x, 2, -4, false );
+var idx = indexOf( x, 2, -4 );
 // returns 4
-```
-
-When searching for a search element, the function checks for strict equality. As a consequence, `NaN` values are considered distinct. In order to resolve the first element which is `NaN`, set the `equalNaNs` argument to `true`.
-
-```javascript
-var x = [ 1, 2, 3, NaN, 5, 6 ];
-
-var idx = indexOf( x, NaN, 0, false );
-// returns -1
-
-idx = indexOf( x, NaN, 0, true );
-// returns 3
 ```
 
 </section>
@@ -133,13 +121,15 @@ idx = indexOf( x, NaN, 0, true );
 
 ## Notes
 
--   If provided an array-like object having an `indexOf` method and `equalNaNs` is `false`, the function defers execution to that method and assumes that the method API has the following signature:
+-   If provided an array-like object having an `indexOf` method, the function defers execution to that method and assumes that the method API has the following signature:
 
     ```text
     x.indexOf( searchElement, fromIndex )
     ```
 
--   If provided an array-like object without an `indexOf` method or if `equalNaNs` is `true`, the function performs a linear scan and returns immediately upon finding a match.
+-   If provided an array-like object without an `indexOf` method, the function performs a linear scan and returns immediately upon finding a match.
+
+-   When searching for a search element, the function checks for equality using the strict equality operator `===`. As a consequence, `NaN` values are considered distinct, and `-0` and `+0` are considered the same.
 
 </section>
 
@@ -158,19 +148,19 @@ var indexOf = require( '@stdlib/array-base-index-of' );
 
 var x = [ 'foo', 'bar', 'beep', 'boop', 'foo', 'bar' ];
 
-var idx = indexOf( x, 'beep', 0, false );
+var idx = indexOf( x, 'beep', 0 );
 // returns 2
 
-idx = indexOf( x, 'bop', 0, false );
+idx = indexOf( x, 'bop', 0 );
 // returns -1
 
-idx = indexOf( x, 'foo', 1, false );
+idx = indexOf( x, 'foo', 1 );
 // returns 4
 
-idx = indexOf( x, 'foo', -4, false );
+idx = indexOf( x, 'foo', -4 );
 // returns 4
 
-idx = indexOf( x, 'foo', 5, false );
+idx = indexOf( x, 'foo', 5 );
 // returns -1
 ```
 
@@ -220,7 +210,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -233,8 +223,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/array-base-index-of.svg
 [npm-url]: https://npmjs.org/package/@stdlib/array-base-index-of
 
-[test-image]: https://github.com/stdlib-js/array-base-index-of/actions/workflows/test.yml/badge.svg?branch=v0.2.2
-[test-url]: https://github.com/stdlib-js/array-base-index-of/actions/workflows/test.yml?query=branch:v0.2.2
+[test-image]: https://github.com/stdlib-js/array-base-index-of/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/array-base-index-of/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/array-base-index-of/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/array-base-index-of?branch=main
