@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-06-02)
+## Unreleased (2025-08-15)
 
 <section class="features">
 
@@ -35,6 +35,8 @@
 
 <details>
 
+-   [`6f85067`](https://github.com/stdlib-js/stdlib/commit/6f8506775cdf2b3edf740216340ff7a0a82677dc) - **test:** fix malformed test descriptions from strictEqual migration _(by Philipp Burckhardt)_
+-   [`a147b7d`](https://github.com/stdlib-js/stdlib/commit/a147b7d6ef754925120fcc7bdec2b40842a3615a) - **test:** use .strictEqual() instead of .equal() and fix lint errors _(by Philipp Burckhardt)_
 -   [`534ddc0`](https://github.com/stdlib-js/stdlib/commit/534ddc015151231e4c9d5e9447b0a8966295876d) - **refactor:** reduce overhead by using specialized utilities _(by Athan Reines)_
 -   [`bbc90c5`](https://github.com/stdlib-js/stdlib/commit/bbc90c530bb2cd9f764e22efa8d127c4ff8275e5) - **refactor:** use more generic types _(by Athan Reines)_
 -   [`1eb07cf`](https://github.com/stdlib-js/stdlib/commit/1eb07cf0699928631f83b036cc2b78a35bbc3c32) - **docs:** remove comments and fix note _(by Athan Reines)_
@@ -50,9 +52,10 @@
 
 ### Contributors
 
-A total of 1 person contributed to this release. Thank you to this contributor:
+A total of 2 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
+-   Philipp Burckhardt
 
 </section>
 
