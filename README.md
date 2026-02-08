@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import indexOf from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-index-of@esm/index.mjs';
+import indexOf from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-index-of@v0.3.1-esm/index.mjs';
 ```
 
 #### indexOf( x, searchElement, fromIndex )
@@ -131,7 +131,7 @@ var idx = indexOf( x, 2, -4 );
 <body>
 <script type="module">
 
-import indexOf from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-index-of@esm/index.mjs';
+import indexOf from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-index-of@v0.3.1-esm/index.mjs';
 
 var x = [ 'foo', 'bar', 'beep', 'boop', 'foo', 'bar' ];
 
